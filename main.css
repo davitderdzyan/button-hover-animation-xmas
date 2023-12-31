@@ -1,0 +1,44 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  padding: 10px;
+  margin: 0;
+  line-height: 1;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(236, 53, 53, 0.7) 0px 0px 20px 4px;
+  background: #f41111;
+  color: white;
+
+  transition: all 1s linear;
+  transform: rotate(0.01deg);
+}
+
+.btn:hover {
+  transform: rotate(10deg);
+  background: white;
+  color: #f41111;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  transform: rotate(25deg);
+  top: -8px;
+  left: 84px;
+  width: 43.5px;
+  height: 37.5px;
+  background-image: url("santa-hat.png");
+  background-size: cover;
+  opacity: 1;
+}
